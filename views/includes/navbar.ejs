@@ -1,0 +1,43 @@
+<style>
+  #search-bar{
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 0.8rem;
+  }
+  #search-btn{
+    border-radius: 25px;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link"  href="/listings">Home</a>
+        <a class="nav-link" href="/listings/new">Add New Hotel</a>
+      </div>
+  
+      <div class="ms-auto">
+        <form class="d-flex" role="search">
+        <input id="search-bar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button id="search-btn" class="btn btn-dark add-btn" type="submit">Search</button>
+        </form>
+      </div>
+    
+      
+      <div class="navbar-nav ms-auto">
+        <% if(!currUser){  %>
+        <a class="nav-link"  href="/signup">Sign-up</a>
+        <a class="nav-link" href="/login">Login</a>
+        <% } %>
+        <% if(currUser){  %>
+        <a class="nav-link" href="/logout">Loggout</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
