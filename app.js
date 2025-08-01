@@ -101,10 +101,6 @@ app.get("/demouser" , async(req,res) =>{
 app.use("/listings" , listings);
 app.use("/listings/:id/reviews" , reviews);
 app.use("/",user);
-
-app.get("/", (req, res) => {
-  res.send("Hi, I am root");
-});
 // app.get("/testListing", async (req, res) => {
 //   let sampleListing = new Listing({
 //     title: "My New Villa",
