@@ -1,4 +1,4 @@
-# 🌍 StayNest
+# 🌍 StayNest    link:- https://staynest-g0mr.onrender.com
 
 StayNest is a feature-rich full-stack web application designed to facilitate the browsing and booking of vacation accommodations, including houses, villas, and farmhouses. Users can add their own properties to the listings, providing a diverse range of options for potential renters. The platform supports seamless booking, instant user assistance via an integrated chatbot, and real-time property location views using Google Live Map. To enhance user experience and security, StayNest offers fast login options through Google OAuth and GitHub OAuth, all packaged within an intuitive and aesthetically pleasing user interface for an engaging experience.
 
